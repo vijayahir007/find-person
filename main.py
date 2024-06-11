@@ -11,5 +11,5 @@ def getUsers():
     return "User get successfully"
 
 if __name__ == '__main__':
-    print('Find Personal app launch for localhost port 8080')
+    print('Find Person application launch for localhost port 8080')
     app.run(debug=True, host='127.0.0.1', port=8080)
