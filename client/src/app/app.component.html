@@ -1,0 +1,28 @@
+<h4 class="title-header">
+  {{title}}
+</h4>
+<div *ngIf="isProcess" class="process-bar">
+  <mat-progress-bar mode="query"></mat-progress-bar>
+</div>
+<main class="main">
+  <div class="notification">
+    @if (message) {
+    <div class="message">
+      {{ message }}
+    </div>
+    }
+    @if (error) {
+    <div class="error-message">
+      {{ error }}
+    </div>
+    }
+  </div>
+  <div fxLayout="column" fxFlexFill>
+    <div fxFlex>
+      <app-files-upload (uploadFilesEvent)="uploadEventHandler($event)"></app-files-upload>
+    </div>
+  </div>
+  <div class="photo-list-parent" *ngIf="isUploadedPhotos">
+    <app-find-photos (searchPhotoEvent)="uploadEventHandler($event)"></app-find-photos>
+  </div>
+</main>

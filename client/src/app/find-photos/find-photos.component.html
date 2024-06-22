@@ -1,0 +1,31 @@
+<div class="upload-section">
+    <div class="upload-form search-form">
+        <mat-form-field>
+            <div>
+                <mat-toolbar >
+                    <input matInput [value]="fileName" />
+                    <input type="file" id="fileInput" (change)="selectFile($event)"
+                        name="fileInput" accept="image/*" />
+                </mat-toolbar>
+            </div>
+        </mat-form-field>
+        <div class="upload-btn">
+            <button mat-flat-button color="primary" [disabled]="searchDisabled" (click)="search()">
+                Search
+            </button>
+        </div>
+    </div>
+</div>
+<h5 *ngIf="noMatchFoundMsg != ''; else listMatch" class="no-find-photos">
+    {{noMatchFoundMsg}}
+</h5>
+<ng-template #listMatch>
+    <div *ngIf="matchPhotos.length > 0" class="find-photos">
+        <mat-toolbar color="primary">
+            Find Photos:
+        </mat-toolbar>
+        <div class="gallery">
+            <img *ngFor="let image of matchPhotos" [src]="imageBaseUrl+image">
+          </div> 
+    </div>
+</ng-template>

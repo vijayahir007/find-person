@@ -151,6 +151,13 @@ dmypy.json
 # pytype static type analyzer
 .pytype/
 
+# vscode
+.vscode/
+
+# extra files
+/app/public/search_photo/
+/app/public/upload_photos/
+
 # Cython debug symbols
 cython_debug/
 

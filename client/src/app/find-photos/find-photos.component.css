@@ -1,0 +1,83 @@
+.basic-container {
+    padding: 5px;
+    max-width: 1000px;
+}
+
+.version-info {
+    font-size: 8pt;
+    float: right;
+}
+
+.container {
+    display: flex;
+    height: 200px;
+
+    img {
+        width: 200px;
+        object-fit: cover;
+        margin: 5px;
+    }
+}
+
+.g-overlay {
+    min-width: 320px;
+}
+
+gallery {
+    font-size: 16px;
+}
+
+img {
+    width: 150px;
+    margin-right: 20px;
+}
+
+.lightbox-example,
+.gallerize-example {
+    margin: 2em;
+}
+
+button {
+    margin-right: 1em;
+}
+
+#fileInput {
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.mat-toolbar-single-row {
+    height: auto !important;
+    background: transparent;
+    padding: 0;
+}
+
+.mat-toolbar-single-row button {
+    width: 100px;
+}
+
+.mat-form-field {
+    width: 100%;
+}
+
+.mat-mdc-form-field {
+    display: block;
+}
+
+.search-form {
+    margin-left: 78px;
+}
+
+.custom {
+    height: auto !important;
+}
+
+.no-find-photos {
+    text-align: center;
+    margin-top: 20px;
+}
