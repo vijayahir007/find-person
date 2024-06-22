@@ -1,0 +1,34 @@
+.title-header {
+  text-align: center;
+  margin-top: 2rem !important;
+}
+
+.notification {
+  height: 55px;
+}
+
+.message,
+.error-message {
+  background-color: #ddd;
+  padding: 10px;
+  border: #aaa solid 1px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.message {
+  color: #5db899
+}
+
+.error-message {
+  color: #ee1c1c;
+}
+
+.process-bar {
+  width: 60%;
+  margin-left: 20rem;
+}
+
+.photo-list-parent {
+  margin-top: 20px;
+}

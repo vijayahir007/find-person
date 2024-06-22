@@ -1,0 +1,22 @@
+<div class="upload-section">
+    <div class="upload-form">
+        <mat-icon aria-hidden="false" *ngIf="isFilesUploaded" class="clear-icon" aria-label="Clear" fontIcon="delete" (click)="clearFile()">
+        </mat-icon>
+        <mat-form-field>
+            <div>
+                <mat-toolbar>
+                    <input matInput [value]="fileName" [disabled]="isFilesUploaded" />
+                    <input type="file" id="fileInput" [disabled]="isFilesUploaded" (change)="selectFile($event)"
+                        name="fileInput" multiple accept="image/*" />
+                </mat-toolbar>
+            </div>
+        </mat-form-field>
+        <div class="upload-btn">
+            <button mat-flat-button color="primary" [disabled]="currentFiles.length === 0" (click)="upload()">
+                Upload
+            </button>
+        </div>
+    </div>
+    
+
+</div>
